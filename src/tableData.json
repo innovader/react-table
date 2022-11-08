@@ -1,0 +1,120 @@
+{
+  "data": [
+      {
+          "id": "4a69e2ee-7869-43ec-b796-6169b7f79db7",
+          "createdAt": "2021-06-29T09:26:24.068Z",
+          "updatedAt": "2021-06-29T09:26:24.068Z",
+          "firstName": "Anabella",
+          "lastName": "French",
+          "role": "ADMIN",
+          "email": "anabell@gmail.com",
+          "avatar": null,
+          "phone": "230044500"
+      },
+      {
+          "id": "9b774e29-cf18-43cc-869e-6df97232c26a",
+          "createdAt": "2021-06-29T09:26:24.068Z",
+          "updatedAt": "2021-06-29T09:26:24.068Z",
+          "firstName": "Graham",
+          "lastName": "Arias",
+          "role": "USER",
+          "email": "ariasg9@gmail.com",
+          "avatar": null,
+          "phone": "1123041"
+      },
+      {
+          "id": "c56fe96d-173d-4ba5-b2d0-2ef94373a26f",
+          "createdAt": "2021-06-29T09:26:24.068Z",
+          "updatedAt": "2021-06-29T09:26:24.068Z",
+          "firstName": "Bruce",
+          "lastName": "Durham",
+          "role": "USER",
+          "email": "bruce@gmail.com",
+          "avatar": null,
+          "phone": "6542200440"
+      },
+      {
+          "id": "598ffa41-c5ab-45da-827a-e780c53cb3b1",
+          "createdAt": "2021-06-29T09:26:24.068Z",
+          "updatedAt": "2021-06-29T09:26:24.068Z",
+          "firstName": "Clarence",
+          "lastName": "Henry",
+          "role": "USER",
+          "email": "clarence_h19@gmail.com",
+          "avatar": null,
+          "phone": "900554012"
+      },
+      {
+          "id": "71ea66f6-d294-4e8a-9b84-4f2d0351df93",
+          "createdAt": "2021-06-29T09:26:24.068Z",
+          "updatedAt": "2021-06-29T09:26:24.068Z",
+          "firstName": "Marques",
+          "lastName": "Mcpherson",
+          "role": "USER",
+          "email": "cpheron@gmail.com",
+          "avatar": null,
+          "phone": "98890044"
+      },
+      {
+          "id": "d475d6be-508a-44c8-94b0-75199c20bd98",
+          "createdAt": "2021-06-29T09:26:24.068Z",
+          "updatedAt": "2021-06-29T09:26:24.068Z",
+          "firstName": "Melissa",
+          "lastName": "Dickson",
+          "role": "USER",
+          "email": "dickson_melissa@gmail.com",
+          "avatar": null,
+          "phone": "122444142"
+      },
+      {
+          "id": "32fea6b7-ab5b-4ae4-abfd-415f5f5101b9",
+          "createdAt": "2021-06-29T09:26:24.068Z",
+          "updatedAt": "2021-06-29T09:26:24.068Z",
+          "firstName": "Dawson",
+          "lastName": "Shields",
+          "role": "USER",
+          "email": "ds@gmail.com",
+          "avatar": null,
+          "phone": "81209534"
+      },
+      {
+          "id": "866f1407-ba5c-400c-8a07-af215a46014a",
+          "createdAt": "2021-06-29T09:26:24.068Z",
+          "updatedAt": "2021-06-29T09:26:24.068Z",
+          "firstName": "German",
+          "lastName": "Crawford",
+          "role": "USER",
+          "email": "germanc@gmail.com",
+          "avatar": null,
+          "phone": "560041234"
+      },
+      {
+          "id": "4b3d83c4-8c8c-4b45-b1fa-546d1b93d128",
+          "createdAt": "2021-06-29T09:26:24.068Z",
+          "updatedAt": "2021-06-29T09:26:24.068Z",
+          "firstName": "Katie",
+          "lastName": "Griffin",
+          "role": "USER",
+          "email": "griffin@gmail.com",
+          "avatar": null,
+          "phone": "48500400300"
+      },
+      {
+          "id": "4138f31e-dbd7-4761-ac56-1544a19b1750",
+          "createdAt": "2021-06-29T09:26:24.068Z",
+          "updatedAt": "2021-06-29T09:26:24.068Z",
+          "firstName": "Judah",
+          "lastName": "Dodson",
+          "role": "USER",
+          "email": "judah_dodson@gmail.com",
+          "avatar": null,
+          "phone": "500400300"
+      }
+  ],
+  "meta": {
+      "page": 1,
+      "take": 10,
+      "itemCount": 20,
+      "pageCount": 2
+  }
+}
