@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
 import TableBody from "./TableBody";
 import TableHead from "./TableHead";
+import Pagination from "./Pagination";
 
 export default function Table({userList}) {
   const [tableData, setTableData] = useState(userList);
+  const [currentPage, setCurrentPage] = useState(1)
   
   const columns = [
     { label: "First Name", accessor: "firstName" },
@@ -39,6 +41,13 @@ export default function Table({userList}) {
       <TableHead columns={columns} handleSorting={handleSorting} />
       <TableBody columns={columns} tableData={tableData} />
       </table>
+      <br></br>
+      <Pagination
+        currentPage={currentPage}
+        total={20}
+        limit={5}
+        onPageChange={(page) => setCurrentPage(page)}
+      />
     </div>
   );
 }
