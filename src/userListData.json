@@ -219,6 +219,39 @@
         "email": "judah_dodson@gmail.com",
         "avatar": null,
         "phone": "500400300"
+    },
+    {
+        "id": "866f1407-ba5c-400c-8a07-af215a46014a-3",
+        "createdAt": "2021-06-29T09:26:24.068Z",
+        "updatedAt": "2021-06-29T09:26:24.068Z",
+        "firstName": "German3",
+        "lastName": "Crawford",
+        "role": "USER",
+        "email": "germanc@gmail.com",
+        "avatar": null,
+        "phone": "560041234"
+    },
+    {
+        "id": "4b3d83c4-8c8c-4b45-b1fa-546d1b93d128-3",
+        "createdAt": "2021-06-29T09:26:24.068Z",
+        "updatedAt": "2021-06-29T09:26:24.068Z",
+        "firstName": "Katie3",
+        "lastName": "Griffin",
+        "role": "USER",
+        "email": "griffin@gmail.com",
+        "avatar": null,
+        "phone": "48500400300"
+    },
+    {
+        "id": "4138f31e-dbd7-4761-ac56-1544a19b1750-3",
+        "createdAt": "2021-06-29T09:26:24.068Z",
+        "updatedAt": "2021-06-29T09:26:24.068Z",
+        "firstName": "Judah3",
+        "lastName": "Dodson",
+        "role": "USER",
+        "email": "judah_dodson@gmail.com",
+        "avatar": null,
+        "phone": "500400300"
     }
   ],
   "meta": {
