@@ -3,10 +3,8 @@ import TableBody from "./TableBody";
 import TableHead from "./TableHead";
 import Pagination from "./Pagination";
 
-export default function Table({userList}) {
-  const [tableData, setTableData] = useState(userList);
-  const [currentPage, setCurrentPage] = useState(1)
-  
+export default function Table({dataList}) {
+  const limit = 5
   const columns = [
     { label: "First Name", accessor: "firstName" },
     { label: "Last Name", accessor: "lastName" },
@@ -28,24 +26,36 @@ export default function Table({userList}) {
        );
       });
       setTableData(sorted);
+      setCurrentPage(1)
     }
   };
+  
+  const [tableData, setTableData] = useState(dataList);
+  const [currentPage, setCurrentPage] = useState(1)
+  const [pageData, setPageData] = useState([]);
+  const pageDataSlice = (data, page, rowsPerPage) => {
+    return data.slice((page - 1) * rowsPerPage, page * rowsPerPage);
+  };
+  useEffect(() => {
+    const pageSlice = pageDataSlice(tableData, currentPage, limit)
+    setPageData([...pageSlice])
+  }, [tableData, limit, currentPage, setPageData]);
 
   useEffect(() => {
-    setTableData(userList)
-}, [userList]);
+    setTableData(dataList)
+    setCurrentPage(1)
+  }, [dataList]);
   
   return (
     <div>
       <table className="table">
-      <TableHead columns={columns} handleSorting={handleSorting} />
-      <TableBody columns={columns} tableData={tableData} />
+        <TableHead columns={columns} handleSorting={handleSorting} />
+        <TableBody columns={columns} tableData={pageData} />
       </table>
-      <br></br>
       <Pagination
         currentPage={currentPage}
-        total={20}
-        limit={5}
+        total={tableData.length}
+        limit={limit}
         onPageChange={(page) => setCurrentPage(page)}
       />
     </div>

@@ -20,16 +20,18 @@ export default function Pagination({currentPage, total, limit, onPageChange}) {
   const pages = range(1, pagesCount)
 
   return (
-    <ul className='pagination'>
-      {pages.map((page) => (
-        <PaginationItem
-          page={page}
-          key={page}
-          currentPage={currentPage}
-          onPageChange={onPageChange}
-        />
-        ))
-      }
-    </ul>
+    <div>
+      <ul className='pagination'>
+        {pages.map((page) => (
+          <PaginationItem
+            page={page}
+            key={page}
+            currentPage={currentPage}
+            onPageChange={onPageChange}
+          />
+          ))
+        }
+      </ul>
+    </div>
   )
 }

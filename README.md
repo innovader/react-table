@@ -5,7 +5,7 @@
 In 6 hours time the application can do the following things:
 a) From the button 'Toggle Theme' you can switch from light to dark theme and it persists its state with localStorage.
 b) From the input you can search for names or emails to filter out your user list.
-c) Basic table that renders a list of users from mock data tableData.json file.
+c) Basic table that renders a list of users from mock data json file.
 d) When you click the table headers, they sort the column and respectively the table.
 
 ### ToDo:
