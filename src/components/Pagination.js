@@ -11,7 +11,7 @@ const PaginationItem = ({page, currentPage, onPageChange}) => {
       className={`page-item ${page === currentPage ? 'active' : ''}`}
       onClick={() => onPageChange(page)}
     >
-      <span className='page-link'>{page}</span>
+      <button className='page-link'>{page}</button>
     </li>
   )
 }
@@ -58,13 +58,12 @@ export default function Pagination({currentPage, total, limit, onPageChange, onI
       </ul>
       <div className='items-per-page'>
         Items per page:
-        <select value={limit} onChange={onItemsPerPageChange}>
-          <option defaultValue='5'>5</option>
-          <option value='10'>10</option>
+        <select className='items-select' value={limit} onChange={onItemsPerPageChange}>
+          <option defaultValue='10'>10</option>
           <option value='20'>20</option>
           <option value={total}>All</option>
         </select>
-        <span>Showing {firstPageItem}-{lastPageItem} of {total}</span> 
+        <span className='items-count'>Showing {firstPageItem}-{lastPageItem} of {total}</span> 
       </div>
     </div>
   )

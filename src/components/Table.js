@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import TableBody from "./TableBody";
 import TableHead from "./TableHead";
 import Pagination from "./Pagination";
+import './table.css' 
 
 export default function Table({dataList}) {
   const columns = [
@@ -16,7 +17,7 @@ export default function Table({dataList}) {
   ];
   
   const [tableData, setTableData] = useState(dataList);
-  const [limit, setLimit] = useState('5')
+  const [limit, setLimit] = useState('10')
   const [currentPage, setCurrentPage] = useState(1)
   const [pageData, setPageData] = useState([]);
   const pageDataSlice = (data, page, rowsPerPage) => {
@@ -55,18 +56,18 @@ export default function Table({dataList}) {
     setCurrentPage(1)
   }
   return (
-    <div>
+    <div className="table-container">
       <table className="table">
         <TableHead columns={columns} handleSorting={handleSorting} />
         <TableBody columns={columns} tableData={pageData} />
       </table>
       <Pagination
-        currentPage={currentPage}
-        total={tableData.length}
-        limit={limit}
-        onPageChange={handlePageChange}
-        onItemsPerPageChange={handleItemsPerPageChange}
-      />
+          currentPage={currentPage}
+          total={tableData.length}
+          limit={limit}
+          onPageChange={handlePageChange}
+          onItemsPerPageChange={handleItemsPerPageChange}
+        />
     </div>
   );
 }

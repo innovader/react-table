@@ -1,0 +1,9 @@
+.table-container {
+  padding: 1rem;
+}
+
+.table {
+  border-collapse: collapse;
+  border: none;
+  width: 100%;
+}

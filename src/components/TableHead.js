@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './tableHead.css'
 
 export default function TableHead({ columns, handleSorting  }) {
   const [sortField, setSortField] = useState("");
@@ -18,6 +19,7 @@ export default function TableHead({ columns, handleSorting  }) {
       {columns.map(({ label, accessor }) => {
        return (
         <th
+          className="tableHeader "
           key={accessor}
           onClick={() => handleSortingChange(accessor)}
           >

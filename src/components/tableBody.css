@@ -1,0 +1,17 @@
+.tableRowItems {
+  cursor: default;
+}
+
+.tableRowItems:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+.tableRowItems:nth-child(even) {
+  background-color: white;
+}
+
+.tableCell {
+  padding: 4px;
+  font-size: 14px;
+  color: grey;
+}
